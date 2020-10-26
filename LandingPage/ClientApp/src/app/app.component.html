@@ -106,8 +106,8 @@
 	<!-- Call To Action -->
 	<div class="cta cta--reverse">
 		<div class="container">
-				<input type="email" name="email" tabindex="-1" value="" placeholder="Email address" />
-				<input type="submit" value="Sign Up" name="Sign Up" id="mc-embedded-subscribe" class="button button__accent" />
+				<input #email type="email" name="email" tabindex="-1"  placeholder="Email address" />
+				<input type="submit" (click)="Subscribe(email.value)" value="Sign Up" name="Sign Up" id="mc-embedded-subscribe" class="button button__accent" />
 		</div>
 	</div>
 	<!-- Footer -->
