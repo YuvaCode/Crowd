@@ -11,7 +11,7 @@ export class SubscribeService {
     constructor(private http: HttpClient) { }
 
      httpOptions = {
-        headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+        headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin' : '*'})
       };
 
     public Subscribe(email : String)

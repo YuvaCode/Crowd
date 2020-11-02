@@ -17,8 +17,8 @@
 			<div class="container">
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
-						<h1 class="hero__title">Fund your Passion</h1>
-						<p class="hero__text">The friendly and free way for fans to support your work. Get paid directly from Selfit</p>
+						<h1 class="hero__title">Profit from your Passion</h1>
+						<p class="hero__text">Take your expertise online and create a sustainable income source.</p>
 						<!-- <a href="#" class="button button__accent">Download Selfit</a> -->
 						<a href="#idlandingSection" class="button hero__button">Learn more</a>
 					</div>
@@ -34,7 +34,7 @@
 	<!-- Steps -->
 	<div id="idlandingSection" class="steps landing__section">
 		<div class="container">
-			<h2>Who can use Selfit?</h2>
+			<h2>How does it work?</h2>
 			<p>Here's who we can think of, but surely creative people will surprise us.</p>
 		</div>
 		<div class="container">
@@ -43,22 +43,22 @@
 					<div class="step__media">
 						<img src="./assets/img/undraw_designer.svg" class="step__image">
 					</div>
-					<h4>Programmers</h4>
-					<p class="step__text">A landing page for your open source projects. Present your solution, easily create docs.</p>
+					<h4>Create Membership Tiers</h4>
+					<p class="step__text">Multiple tiers, discrete benefits - Enable different groups of members to access relevant content and benefits.</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
 						<img src="./assets/img/undraw_responsive.svg" class="step__image">
 					</div>
-					<h4>Designers</h4>
-					<p class="step__text">A website for your own freebies. Let the world download and use your artwork.</p>
+					<h4>Publish Content</h4>
+					<p class="step__text">Audio, video, files - Assign member-only content to a specific membership plan. Deliver all your content at once or drip-feed it.</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
 						<img src="./assets/img/undraw_creation.svg" class="step__image">
 					</div>
-					<h4>Makers</h4>
-					<p class="step__text">A great starting point for your web application. Focus on your idea and execution.</p>
+					<h4>Process Payments</h4>
+					<p class="step__text">Stripe and Bitcoin - Easily process recurring payments from your subscribers. Optimize your process with Google Analytics and other integrated reporting tools.</p>
 				</div>
 			</div>
 		</div>
@@ -71,8 +71,8 @@
 					<img src="./assets/img/undraw_browser.svg" class="expanded__image">
 				</div>
 				<div class="expanded__content">
-					<h2 class="expanded__title">Natural styling with almost nothing to learn</h2>
-					<p class="expanded__text">Selfit brings you the pages you'll need and the structure to create your own, without a learning curve. It is minimal and mostly styles plain elements. There are only a few classes you'll need to know but nothing to disrupt your preferred coding style.</p>
+					<h2 class="expanded__title">Consistent, recurring income.</h2>
+					<p class="expanded__text">Put an end to hit-or-miss ad revenues and per-stream payouts. Create, manage and track membership subscriptions.</p>
 				</div>
 			</div>
 		</div>
@@ -84,8 +84,8 @@
 					<img src="./assets/img/undraw_frameworks.svg" class="expanded__image">
 				</div>
 				<div class="expanded__content">
-					<h2 class="expanded__title">Framework agnostic. Your front-end setup, your choice.</h2>
-					<p class="expanded__text">Selfit has zero dependencies and uses vanilla JavaScript for a few functions with minimal footprint. You can use React, Vue, Angular, jQuery or whatever you prefer.</p>
+					<h2 class="expanded__title">Your content, your way.</h2>
+					<p class="expanded__text">Own your content and the process. Create what you want, when you want..</p>
 				</div>
 			</div>
 		</div>
@@ -97,8 +97,8 @@
 					<img src="./assets/img/together.svg" class="expanded__image">
 				</div>
 				<div class="expanded__content">
-					<h2 class="expanded__title">Ready for production or rapid prototyping</h2>
-					<p class="expanded__text">Landing, authentication and a few other pages to select from, despite the small size. Tested on production at unDraw with amazing speeds and unopinionated on how to structure your project. We really hope you'll find it awesome and useful!</p>
+					<h2 class="expanded__title">Connect with your fans.</h2>
+					<p class="expanded__text">Engage with your fans. Be part of a community fueled by the same passion.</p>
 				</div>
 			</div>
 		</div>
@@ -106,30 +106,26 @@
 	<!-- Call To Action -->
 	<div class="cta cta--reverse">
 		<div class="container">
-				<input #email type="email" name="email" tabindex="-1"  placeholder="Email address" />
-				<input type="submit" (click)="Subscribe(email.value)" value="Sign Up" name="Sign Up" id="mc-embedded-subscribe" class="button button__accent" />
+				<input #email type="email" name="email" tabindex="-1"  
+				placeholder="Email address" />
+				<input  type="submit" (click)="Subscribe(email.value)" value="Sign Up" name="Sign Up" id="mc-embedded-subscribe" 
+				class="button button__accent" />
+		</div>
+		<div>
+			<label *ngIf="enabled" class="message">Thank you for Signup.</label>
 		</div>
 	</div>
 	<!-- Footer -->
 	<div class="footer footer--dark">
 		<div class="container">
 			<div class="footer__inner">
-				<a href="index.html" class="footer__textLogo">Selfit theme</a>
+				<a href="index.html" class="footer__textLogo">Selfit</a>
 				<div class="footer__data">
 					<div class="footer__data__item">
-						<div class="footer__row">
-							Created by <a href="https://twitter.com/ninalimpi" target="_blank" class="footer__link">Katerina Limpitsouni</a>
-						</div>
-						<div class="footer__row">
-						Code/design by <a href="https://twitter.com/anges244" target="_blank" class="footer__link">Aggelos Gesoulis</a>
-						</div>
+						<div class="footer__row">Copyright © 2020 Selfit. All rights reserved.</div>
 					</div>
 					<div class="footer__data__item">
-						<div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
-						</div>
-					</div>
-					<div class="footer__data__item">
-					<div class="footer__row">
+					<!-- <div class="footer__row">
 						<a href="https://github.com/anges244/Selfit" target="_blank" class="footer__link">GitHub</a>
 					</div>
 					<div class="footer__row">
@@ -140,7 +136,7 @@
 					</div>
 					<div class="footer__row">
 						<a href="./additional.html" class="footer__link">MIT license</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
