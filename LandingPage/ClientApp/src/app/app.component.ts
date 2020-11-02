@@ -19,4 +19,9 @@ export class AppComponent {
     this.enabled = true;
   }
 
+  public focusFunction()
+  {
+    this.enabled = false;
+  }
+
 }
