@@ -18,6 +18,7 @@
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
 						<h1 class="hero__title">Profit from your Passion</h1>
+						<h2 class="hero__title">Food | Fashion | Fitness</h2>
 						<p class="hero__text">Take your expertise online and create a sustainable income source.</p>
 						<!-- <a href="#" class="button button__accent">Download Selfit</a> -->
 						<a href="#idlandingSection" class="button hero__button">Learn more</a>
@@ -107,12 +108,12 @@
 	<div class="cta cta--reverse">
 		<form #heroForm="ngForm">
 		<div class="container">
-			<p class="hero__text">Enter your email address below to subscribe.</p>
+			<p class="hero__text">Enter email address to know more.</p>
 			<input type="email" id="email" (focus)="focusFunction()" 
 			required maxlength="30" minlength="2" placeholder="Email is required"
 			ngModel name="email" #email="ngModel">
 
-			<input  type="submit" (click)="Subscribe(email.value)" value="Sign Up" name="Sign Up" id="mc-embedded-subscribe" 
+			<input  type="submit" (click)="Subscribe(email.value)" value="Submit" name="Submit" id="mc-embedded-subscribe" 
 				class="button button__accent" [disabled]="!heroForm.form.valid"/>
 		   </div>
 		<div class="row">
